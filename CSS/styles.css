@@ -1,0 +1,12 @@
+table,
+th,
+td {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 30px;
+  background-color: #ffe9e4;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  border-radius: 15px;
+}

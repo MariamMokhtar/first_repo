@@ -1,0 +1,12 @@
+function checkIfNumber( x ){if ( typeof x === 'number' ){
+        console.log( x + ' is a number.' ); 
+    }
+}
+
+
+
+function checkIfNumber(tot) {
+  if (tot < 0) {
+    return;
+  }
+}

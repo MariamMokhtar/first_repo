@@ -1,0 +1,89 @@
+<html>
+  <head>
+    <title>Shopping cart</title>
+    <link href="./CSS/styles.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <table id="big">
+      <tr>
+        <th>Product</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Total</th>
+      </tr>
+
+      <tr id="unicorns">
+        <td>Unicorns</td>
+        <td id="price1">20</td>
+        <td id="unicorns_qty">0</td>
+        <td id="totprice1">0</td>
+        <td>
+          <button onclick="changeColor('love1')">
+            <i id="love1" class="far fa-heart"></i>
+          </button>
+        </td>
+        <td>
+          <button onclick="add('unicorns_qty', 'price1', 'totprice1' )">
+            +
+          </button>
+        </td>
+        <td>
+          <button onclick="sub('unicorns_qty', 'price1', 'totprice1')">
+            -
+          </button>
+        </td>
+        <td><button onclick="del('unicorns')">Delete</button></td>
+      </tr>
+
+      <tr id="hairdye">
+        <td>Hair dye</td>
+        <td id="price2">15</td>
+        <td id="hairdye_qty">0</td>
+        <td id="totprice2">0</td>
+        <td>
+          <button onclick="changeColor('love2')">
+            <i id="love2" class="far fa-heart"></i>
+          </button>
+        </td>
+        <td>
+          <button onclick="add('hairdye_qty', 'price2', 'totprice2')">+</button>
+        </td>
+        <td>
+          <button onclick="sub('hairdye_qty', 'price2', 'totprice2')">-</button>
+        </td>
+        <td><button onclick="del('hairdye')">Delete</button></td>
+      </tr>
+      ``
+
+      <tr id="sweatshirt">
+        <td>Sweatshirt</td>
+        <td id="price3">12</td>
+        <td id="sweatshirt_qty">0</td>
+        <td id="totprice3">0</td>
+        <td>
+          <button onclick="changeColor('love3')">
+            <i id="love3" class="far fa-heart"></i>
+          </button>
+        </td>
+        <td>
+          <button onclick="add('sweatshirt_qty', 'price3', 'totprice3')">
+            +
+          </button>
+        </td>
+        <td>
+          <button onclick="sub('sweatshirt_qty', 'price3', 'totprice3')">
+            -
+          </button>
+        </td>
+        <td><button onclick="del('sweatshirt')">Delete</button></td>
+      </tr>
+    </table>
+    <script src="scripts/app.js"></script>
+  </body>
+</html>
